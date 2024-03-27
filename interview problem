@@ -1,0 +1,41 @@
+
+The interview question is below. If you'd like you can complete it before we meet and we can walk through your design process together or we can work through the problem when we meet. Whatever your comfortable with.
+==========================================
+
+Instructions:
+1. Read two files json files provided.
+
+2. We want to transform the data to the following file format:
+
+CyberAttackObject:
+    Id
+    Name
+    Type/AttackType
+    Description/ Sources[0] 
+
+
+3. This will then be saved to a sql database of your choice. 
+
+4. The new object will be published to a new kafka topic called "cao"
+
+4b. Read from the kafka topic you wrote to, to confirm the data is saved.
+
+5. Print the number of items ingested in each file, print the number of items saved into postgres, the number of items consumed/produced into the kafka topic, and print a count query on the database.
+
+print(f"We have ingested n items in File 1")
+print(f"We have ingested n items in File 2")
+print(f"We have saved n items into Postgres")
+print(f"We have Published n items in Kafka topic cao")
+print(f"We have Consumed n items in Kafka topic cao")
+print(f"We have counted n items in postgres")
+
+6. Dockerize the application
+
+==========================================
+
+Notes:
+Any libraries/frameworks to solve this problem
+Any version of postgres
+Any version of Python to solve the problem
+Write integration tests 
+You can make changes necessary
